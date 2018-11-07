@@ -11,15 +11,16 @@ console.log(typeof y,y);
 var y = {x: 76, o:"erww"};
 console.log(typeof y,y);
 
-
+var over = "I am over 25 years old";
+var under = "I am under 25";
+var result;
 var myCurrentAge = prompt("How old are you?");
 if (myCurrentAge >= 25) {
-    console.log(myCurrentAge,"I am over 25 years old");
-    alert("I am over 25 years old");
+    result = over;
 } else {
-    console.log(myCurrentAge,"I am under 25");
-    alert("I am under 25");
+    result = under;
 }
+console.log('if result:',result);
 
-var age = prompt("Please write your age");
-(age >= 25) ?  console.log(age,"I am over 25 years old") : console.log(age,"I am under 25");
+result = myCurrentAge >= 25 ? over : under;
+ console.log('? result:', result);
